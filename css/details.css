@@ -1,0 +1,273 @@
+@charset "UTF-8";
+body {
+  background: #fff;
+  color: #333;
+  font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif; }
+
+.container {
+  /*内容、版心 提取 */
+  width: 1226px;
+  margin: 0 auto; }
+
+.xm_header {
+  height: 140px; }
+
+.xm-product-box {
+  position: relative;
+  height: 63px;
+  width: 100%;
+  margin-top: 0;
+  color: #616161;
+  z-index: 4;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
+  transition: all .5s; }
+  .xm-product-box .J_proName {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #212121;
+    float: left; }
+  .xm-product-box .right {
+    float: right;
+    margin-top: 17px; }
+    .xm-product-box .right a {
+      color: #616161; }
+      .xm-product-box .right a:hover {
+        color: #ff6700; }
+    .xm-product-box .right .separator {
+      color: #e0e0e0;
+      margin: 0 0.25em; }
+
+.nav-bar-hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  margin-top: -70px;
+  box-shadow: none; }
+
+.nav_fix {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.07);
+  margin-top: 0; }
+
+.span10 {
+  width: 606px; }
+
+.box {
+  padding-top: 32px;
+  padding-bottom: 12px;
+  position: relative;
+  background: #fff; }
+
+.pro-view {
+  width: 530px;
+  height: 530px;
+  position: relative;
+  float: left; }
+  .pro-view .swiper-container {
+    width: 100%; }
+    .pro-view .swiper-container img {
+      width: 530px;
+      height: 530px;
+      background: #fff; }
+  .pro-view .swiper-pagination .swiper-pagination-bullet {
+    width: 50px;
+    height: 2px;
+    display: inline-block;
+    border-radius: 0;
+    background: #000;
+    opacity: 1;
+    background: #ccc; }
+  .pro-view .swiper-pagination .swiper-pagination-bullet-active {
+    background: #a3a3a3; }
+  .pro-view .swiper-button-prev {
+    width: 41px;
+    height: 69px;
+    background: url(/images/icon-slides.png) no-repeat -84px 50%; }
+    .pro-view .swiper-button-prev:hover {
+      background-position: 0 50%; }
+  .pro-view .swiper-button-next {
+    margin-right: -10px;
+    width: 41px;
+    height: 69px;
+    background: url(/images/icon-slides.png) no-repeat -128px 50%; }
+    .pro-view .swiper-button-next:hover {
+      background-position: -41px 50%; }
+  .pro-view .swiper-shade {
+    display: none;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: rgba(36, 212, 242, 0.3);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    cursor: move; }
+  .pro-view .swiper-container-big {
+    display: none;
+    position: absolute;
+    width: 630px;
+    height: 530px;
+    top: 0;
+    left: 100%;
+    z-index: 99;
+    overflow: hidden; }
+    .pro-view .swiper-container-big .swiper-big {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      left: 0;
+      top: 0; }
+      .pro-view .swiper-container-big .swiper-big img {
+        width: 1000px;
+        height: 1000px; }
+
+.pro-info {
+  float: right;
+  margin-left: 12px; }
+  .pro-info .pro-title {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: normal;
+    color: #212121; }
+  .pro-info .sale-desc {
+    color: #b0b0b0;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px; }
+
+.J_main .aftersale-company {
+  margin-bottom: 0;
+  color: #ff6700;
+  margin: 1em 0; }
+.J_main .pro-price {
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  color: #ff6700;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px 0 20px; }
+.J_main .J_saleWrap {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0; }
+.J_main .pro-list {
+  margin-top: 30px;
+  background: #f9f9fa;
+  padding: 30px;
+  margin-bottom: 30px; }
+.J_main .btn-wrap {
+  padding: 0;
+  margin: 10px 0 20px 0; }
+
+.J_flowWrap .flow-tag {
+  display: inline-block;
+  width: 80px;
+  padding: 2px 0;
+  text-align: center;
+  background: #ff6700;
+  color: #fff; }
+.J_flowWrap .flow-name {
+  width: 430px;
+  line-height: 26px;
+  margin-left: 5px; }
+
+.pro-list li {
+  list-style: none;
+  line-height: 30px;
+  color: #616161; }
+  .pro-list li span {
+    float: right; }
+.pro-list .totlePrice {
+  color: #ff6700;
+  font-size: 24px;
+  padding-top: 20px; }
+
+.btn-wrap li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: text-top; }
+.btn-wrap .btn {
+  display: inline-block;
+  width: 158px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  color: #b0b0b0;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s; }
+.btn-wrap .btn-primary {
+  background: #ff6700;
+  border-color: #ff6700;
+  color: #fff; }
+  .btn-wrap .btn-primary:hover {
+    background-color: #f25807;
+    border-color: #f25807;
+    color: #fff; }
+.btn-wrap .btn-biglarge {
+  width: 298px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px; }
+.btn-wrap .btn-gray {
+  background: #b0b0b0;
+  border-color: #b0b0b0;
+  color: #fff; }
+  .btn-wrap .btn-gray i {
+    font-weight: 900;
+    font-size: 18px; }
+  .btn-wrap .btn-gray:hover {
+    background-color: #757575;
+    border-color: #757575;
+    color: #fff; }
+.btn-wrap .btn-like {
+  display: inline-block;
+  width: 140px;
+  height: 52px;
+  line-height: 52px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #b0b0b0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  font-size: 16px;
+  position: relative; }
+
+.pro-policy li {
+  float: left;
+  white-space: nowrap;
+  color: #b0b0b0;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 15px;
+  line-height: 30px;
+  margin-bottom: 10px; }
+  .pro-policy li i {
+    font-size: 24px;
+    vertical-align: middle; }
+  .pro-policy li em {
+    vertical-align: middle; }
+
+.section {
+  padding-bottom: 50px;
+  background: #f5f5f5;
+  overflow: hidden; }
+  .section h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 1em 0; }
+
+/*# sourceMappingURL=details.css.map */

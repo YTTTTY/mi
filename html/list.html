@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米手机原装配件-小米商城</title>
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+		<script src="/lib/jquery-1.12.4.js"></script>
+		<script src="../lib/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div class="xm_header"></div>
+		<script>
+			var header = new Promise(function(res) {
+				$.ajax({
+					type: 'get',
+					url: '/html/head.html',
+					success: function(str) {
+						$('.xm_header').html(str);
+						res()
+					}
+				});
+			});
+			header.then(function() {
+				$.ajax({
+					type: 'get',
+					url: '/js/header.js'
+				});
+			});
+		</script>
+		<div class="breadcrumbs">
+			<div class="container">
+				<!-- <a href="/html/index.html">首页</a>
+				<span class="sep">&gt;</span>
+				<span>所有商品</span> -->
+			</div>
+		</div>
+		<div class="filter-boxs">
+			<div class="container">
+				<div class="filter-box">
+					<div class="filter-list-wrap bt">
+						<dl class="filter-list clearfix filter-list-row-6">
+							<dt>分类：</dt>
+							<dd class="active">全部</dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">保护套 / 贴膜</a></dd>
+							<dd><a href="javascript:;">路由器 / 智能硬件</a></dd>
+							<dd><a href="javascript:;">电池 / 存储卡</a></dd>
+							<dd><a href="javascript:;">线材 / 支架 / 存储卡</a></dd>
+							<dd><a href="javascript:;">耳机 / 音箱</a></dd>
+							<dd><a href="javascript:;">箱包 / 服饰</a></dd>
+							<dd><a href="javascript:;">米兔 / 生活周边</a></dd>
+							<dd><a href="javascript:;">笔记本电脑配件</a></dd>
+							<dd><a href="javascript:;">出行／穿戴</a></dd>
+							<dd><a href="javascript:;">工具</a></dd>
+							<dd><a href="javascript:;">生活 / 箱包</a></dd>
+							<dd><a href="javascript:;">耳机 / 音箱</a></dd>
+							<dd><a href="javascript:;">箱包 / 服饰</a></dd>
+							<dd><a href="javascript:;">米兔 / 生活周边</a></dd>
+							<dd><a href="javascript:;">笔记本电脑配件</a></dd>
+							<dd><a href="javascript:;">出行／穿戴</a></dd>
+							<dd><a href="javascript:;">工具</a></dd>
+							<dd><a href="javascript:;">生活 / 箱包</a></dd>
+							<dd><a href="javascript:;">耳机 / 音箱</a></dd>
+							<dd><a href="javascript:;">箱包 / 服饰</a></dd>
+							<dd><a href="javascript:;">米兔 / 生活周边</a></dd>
+							<dd><a href="javascript:;">笔记本电脑配件</a></dd>
+							<dd><a href="javascript:;">出行／穿戴</a></dd>
+							<dd><a href="javascript:;">工具</a></dd>
+							<dd><a href="javascript:;">生活 / 箱包</a></dd>
+						</dl>
+						<a href="javascript:void(0);" class="more J_filterToggle">更多
+							<i class="iconfont">&#xe635;</i>
+						</a>
+					</div>
+				</div>
+				<div class="filter-box">
+					<div class="filter-list-wrap">
+						<dl class="filter-list clearfix filter-list-row-6">
+							<dt>机型：</dt>
+							<dd class="active">全部</dd>
+							<dd><a href="javascript:;">Redmi Note 7 Pro</a></dd>
+							<dd><a href="javascript:;">黑鲨游戏手机 2</a></dd>
+							<dd><a href="javascript:;">Redmi 7</a></dd>
+							<dd><a href="javascript:;">小米9 SE</a></dd>
+							<dd><a href="javascript:;">小米9</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+						</dl>
+						<a href="javascript:void(0);" class="more J_filterToggle">更多
+							<i class="iconfont">&#xe635;</i>
+						</a>
+					</div>
+				</div>
+				<div class="filter-box">
+					<div class="filter-list-wrap">
+						<dl class="filter-list clearfix filter-list-row-6">
+							<dt>品牌：</dt>
+							<dd class="active">全部</dd>
+							<dd><a href="javascript:;">小米</a></dd>
+							<dd><a href="javascript:;">飞利浦</a></dd>
+							<dd><a href="javascript:;">第三方品牌</a></dd>
+							<dd><a href="javascript:;">ZMI</a></dd>
+							<dd><a href="javascript:;">90分</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+							<dd><a href="javascript:;">小米平板</a></dd>
+						</dl>
+						<a href="javascript:void(0);" class="more J_filterToggle">更多
+							<i class="iconfont">&#xe635;</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="order-list-box clearfix">
+					<ul class="order-list">
+						<li class="active first">
+							<a href="javascript:void(0)" id="recommend">推荐</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" id="now">新品</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" id="lifting">价格
+								<i class="iconfont">&#xe71a;</i></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">评论最多</a>
+						</li>
+					</ul>
+					<ul class="type-list">
+						<li>
+							<a href="javascript:void(0)">
+								<span class="checkbox">
+									<i class="iconfont">&#xe6cc;</i>
+								</span>
+								查看评价</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<span class="checkbox">
+									<i class="iconfont">&#xe6cc;</i>
+								</span>
+								仅显示特惠商品</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<span class="checkbox">
+									<i class="iconfont">&#xe6cc;</i>
+								</span>
+								仅显示有货商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="goods-list-box">
+					<div class="goods-list clearfix">
+						<!-- <div class="goods-item">
+							<div class="figure figure-img">
+								<a href="javascript:;">
+									<img src="/images/mi1.png" width="200" height="200" />
+								</a>
+							</div>
+							<p class="desc"></p>
+							<h2 class="title">
+								<a href="javascript:;">米家激光投影电视 4K</a>
+							</h2>
+							<p class="prive">12999元 </p>
+							<div class="thumbs">
+								<ul class="thumb-list clearfix">
+									<li>
+										<img src="/images/mi1.png" />
+									</li>
+								</ul>
+							</div>
+							<div class="actions clearfix">
+								<a href="javascript:;" class="btn-like J_likeGoods">
+									<i class="iconfont">&#xe656;</i>
+									<span>喜欢</span>
+								</a>
+								<a href="javascript:;" class="btn-buy btn-buy-detail">
+									<span>查看详情</span>
+									<i class="iconfont">&#xe910;</i>
+								</a>
+							</div>
+							<div class="flags">
+								<div class="flag flag-saleoff">9折促销</div>
+							</div>
+						</div> -->
+					</div>
+					<div class="xm-pagenavi">
+						<!-- <a href="javascript:void(0);" class="numbers first iconfont">&#xe606;</a>
+						<a href="javascript:void(0);" class="numbers">1</a>
+						<span class="numbers">...</span>
+						<a href="javascript:void(0);" class="numbers last iconfont">&#xe602;</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-false">
+			<div class="container">
+				<img src="/images/list-ll.png" width="1226px" />
+			</div>
+		</div>
+		<div class="site-footer"></div>
+		<script>
+			$.ajax({
+				type: 'get',
+				url: '/html/footer.html',
+				success: function(str) {
+					$('.site-footer').html(str);
+				}
+			});
+		</script>
+		<script src="/js/list.js"></script>
+	</body>
+</html>

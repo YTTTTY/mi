@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的购物车-小米商城</title>
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/css/cart.css" />
+		<link rel="stylesheet" type="text/css" href="/css/footer.css" />
+		<script src="/lib/jquery-1.12.4.js"></script>
+	</head>
+	<body>
+		<div class="site-header">
+			<div class="container">
+				<div class="header-logo">
+					<a href="/index.html">小米官网</a>
+				</div>
+				<div class="header-title">
+					<h2>我的购物车</h2>
+					<p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+				</div>
+				<div class="head_info">
+					<a href="javascript:;" id="login">登录</a>
+					<span class="sep">|</span>
+					<a href="javascript:;" id="register">注册</a>
+				</div>
+				<div class="topbar-info" style="display:none">
+					<span class="user">
+						<a href="javascript:;" class="user-name">
+							<em id="username">131126875</em>
+							<i class="iconfont">&#xe635;</i>
+						</a>
+						<ul class="user-menu">
+							<li>
+								<a href="javascript:;">个人中心</a>
+							</li>
+							<li>
+								<a href="javascript:;">评价晒单</a>
+							</li>
+							<li>
+								<a href="javascript:;">我的喜欢</a>
+							</li>
+							<li>
+								<a href="javascript:;">小米帐号</a>
+							</li>
+							<li>
+								<a href="javascript:;" id="signout">退出登录</a>
+							</li>
+						</ul>
+					</span>
+					<span class="sep">|</span>
+					<a href="javascript:;" class="link link-order">我的订单</a>
+				</div>
+			</div>
+		</div>
+		<div class="cart-empty" id="cart-empty" style="display: none;">
+			<h2>您的购物车还是空的！</h2>
+			<p class="login-desc">登录后将显示您之前加入的商品</p>
+			<a href="javascript:;" id="J_loginBtn" class="btn btn-primary">立即登录</a>
+			<a href="/html/list.html" class="btn btn-shoping">马上去购物</a>
+		</div>
+		<div class="cart-empty" id="login-empty" style="display: none;">
+			<h2>您的购物车还是空的！</h2>
+			<a href="/html/list.html" class="btn btn-primary">马上去购物</a>
+		</div>
+		<div class="page-main" style="display: none;">
+			<div class="container">
+				<div class="J_cartBox">
+					<div class="cart-goods-list">
+						<div class="list-head clearfix">
+							<div class="col col-check">
+								<i class="iconfont icon-checkbox" id="J_selectAll">&#xe6cc;</i>
+								全选
+							</div>
+							<div class="col col-img">&nbsp;</div>
+							<div class="col col-name">商品名称</div>
+							<div class="col col-price">单价</div>
+							<div class="col col-num">数量</div>
+							<div class="col col-total">小计</div>
+							<div class="col col-action">操作</div>
+						</div>
+						<div class="list-body" id="J_cartListBody">
+						<!-- 	<div class="item-box">
+								<div class="item-table J_cartGoods">
+									<div class="item-row clearfix">
+										<div class="col col-check clearfix">
+											<i class="iconfont icon-checkbox J_itemCheckbox" data-status="1">&#xe6cc;</i>
+										</div>
+										<div class="col col-img">
+											<a href="javascript:;">
+												<img src="/images/mi1.png" width="80" height="80" />
+											</a>
+										</div>
+										<div class="col col-name">
+											<h3 class="name">
+												<a href="javascript:;"> 小米体重秤2 白色 </a>
+											</h3>
+										</div>
+										<div class="col col-price">59元</div>
+										<div class="col col-num">
+											<div class="change-goods-num J_changeGoodsNum">
+												<a href="javascript:;" class="J_minus">
+													<i class="iconfont">&#xe63d;</i>
+												</a>
+												<input type="text" value="1" class="J_input" data-buylimit="${item.stock} />
+												<a href="javascript:;" class="J_plus">
+													<i class="iconfont">&#xe61f;</i>
+												</a>
+												<div class="msg J_canBuyLimit">还可买 3 件</div>
+											</div>
+										</div>
+										<div class="col col-total">59元</div>
+										<div class="col col-action">
+											<a href="javascript:;" class="J_delete">
+												<i class="iconfont">&#xe60b;</i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+					<div class="cart-bar clearfix" id="J_cartBar">
+						<div class="section-left">
+							<a href="/html/list.html" class="back-shopping">继续购物</a>
+							<span class="cart-total">
+								共 <i id="J_cartTotalNum">2</i>件商品，已选择
+								<i id="J_selTotalNum">0</i>件
+							</span>
+						</div>
+						<span class="total-price">
+							合计：<em id="J_cartTotalPrice">0</em>元
+						</span>
+						<a href="javascript:;" class="btn btn-disabled" id="J_goCheckout">去结算</a>
+						<div class="no-select-tip" id="J_noSelectTip">
+							请勾选需要结算的商品
+							<i class="arrow arrow-a"></i>
+							<i class="arrow arrow-b"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-backdrop" style="width: 100%; height: 100%; display: none;"></div>
+		<div class="modal modal-alert" id="J_modalAlert">
+			<div class="modal-bd">
+				<div class="text">
+					<h3 class="much-text">确定删除吗？</h3>
+				</div>
+				<div class="actions">
+					<button class="btn btn-gray" id="J_alertCancel">取消</button>
+					<button class="btn btn-primary" id="J_alertOk">确定</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal-alert" id="J_modalAlert1">
+			<div class="modal-bd">
+				<div class="text">
+					<h3 class="much-text much-text-max">商品超过最大购买限制 [3091008]</h3>
+				</div>
+				<div class="actions">
+					<button class="btn btn-primary" id="J_alertCancel1">确定</button>
+				</div>
+			</div>
+		</div>
+		<div class="cart-false">
+			<div class="container">
+				<img src="/images/cart-fals.png" width="1226" />
+			</div>
+		</div>
+		<div class="site-footer"></div>
+		<script>
+			$.ajax({
+				type: 'get',
+				url: '/html/footer.html',
+				success: function(str) {
+					$('.site-footer').html(str);
+				}
+			});
+		</script>
+		<script src="/lib/jquery.cookie.js"></script>
+		<script src="/js/cart.js"></script>
+	</body>
+</html>

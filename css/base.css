@@ -1,0 +1,156 @@
+/*(1)清除默认样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{
+    margin:0; 
+    padding:0;
+}
+body {
+	background: #F5F5F5;
+	color: #333;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	
+}
+/*去掉input等聚焦时的蓝色边框*/
+fieldset, img,input,button {
+    border:0 none;
+    padding:0;
+    margin:0;
+    outline-style:none;
+}   
+
+ul,li,ol{
+    list-style:none;
+}
+select, input {
+    vertical-align:middle;
+}
+
+/*防止拖动*/
+textarea {
+    resize:none;
+}
+
+*,
+*::before,
+*::after{
+    /*所有的标签，和伪元素都选中*/
+    margin: 0;
+    padding: 0;
+    /*移动端常用布局是非固定像素*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*点击高亮效果的清除*/
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+/*  当a标签嵌套img,在IE6里会出现蓝色边框 方法：border:0 none;*/
+img {
+    border:0 none;
+    vertical-align:middle;
+}  
+
+table {
+    border-collapse:collapse;
+}
+
+a {
+    text-decoration:none;
+}
+
+*{box-sizing:border-box;}
+
+/*2.添加公共样式*/
+/*body {
+    font:12px Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}*/
+
+/*清除浮动（不管）*/
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+    content:"";
+    display:block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+/*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+h1,h2,h3,h4,h5,h6 {
+    font-weight:normal;
+    font-size:1em;
+} 
+s,i,em{
+    font-style:normal;
+    text-decoration:none;
+}
+
+
+/*公共类*/
+
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+
+.br{
+    border-right:transparent !important;
+}
+.bl{
+    border-left:transparent !important;
+}
+.bt{
+    border-top:transparent !important;
+}
+.bb{
+    border-bottom:transparent !important;
+}
+
+.mr{
+    margin-right:0 !important;
+}
+.ml{
+    margin-left:0 !important;
+}
+.mt{
+    margin-top:0 !important;
+}
+.mb{
+    margin-bottom:0 !important;
+}
+
+.pr{
+    padding-right:0 !important;
+}
+.pl{
+    padding-left:0 !important;
+}
+.pt{
+    padding-top:0 !important;
+}
+.pb{
+    padding-bottom:0 !important;
+}
+.top::before{
+	display:none !important;
+}
+.left::after{
+	display:none !important;
+}
+
+.hide {
+    display:none;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}

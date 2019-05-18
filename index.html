@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城 - 小米9、小米MIX 3、红米Note 7，小米电视官方网站</title>
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="/css/index.css" />
+		<script src="/lib/jquery-1.12.4.js"></script>
+		<script src="../lib/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div class="xm_header"></div>
+		<script>
+			var header = new Promise(function(res){
+				$.ajax({
+					type: 'get',
+					url: '/html/head.html',
+					success: function(str) {
+						$('.xm_header').html(str);
+						res();
+					}
+				});
+			});
+			header.then(function(){
+				$.ajax({
+					type: 'get',
+					url: '/js/header.js',
+					success : function(){
+						$('.link-categorys').remove();
+						$('.J_navCategory').on('mouseleave', function() {
+							$('.site-category').css('display','block');
+						});
+					}
+				});
+			});
+		</script>
+		<div class="xm_bannner clearfix">
+			<div class="container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="/images/banner1.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="/images/banner2.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="/images/banner3.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="/images/banner4.jpg" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="/images/banner5.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+					<div class="swiper-button-next"></div>
+					<!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+				</div>
+				<div class="home-hero-sub clearfix">
+					<div class="span4">
+						<ul class="clearfix home-channel-list">
+							<li class="top left">
+								<a href="#">
+									<i class="iconfont">&#xe605;</i>
+									<p>选购手机</p>
+								</a>
+							</li>
+							<li class="top">
+								<a href="#">
+									<i class="iconfont">&#xe9d0;</i>
+									<p>企业团购</p>
+								</a>
+							</li>
+							<li class="top">
+								<a href="#">
+									<i class="iconfont">&#xe604;</i>
+									<p>F码通道</p>
+								</a>
+							</li>
+							<li class="left">
+								<a href="#">
+									<i class="iconfont">&#xe60e;</i>
+									<p>米粉卡</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="iconfont">&#xe60f;</i>
+									<p>以旧换新</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="iconfont">&#xe603;</i>
+									<p>话费充值</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="span16">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="/images/ban1.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/images/ban2.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/images/ban3.jpg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="J_itemBox">
+					<a href="#">
+						<img src="/images/chang1.jpg" width="1226" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="xm-main">
+			<div class="container">
+				<div id="phone" class="home-brick-box">
+					<div class="box-hd clearfix">
+						<h2 class="title">手机</h2>
+						<div class="more">
+							<a href="#">查看全部
+								<i class="iconfont">&#xe60d;</i>
+							</a>
+						</div>
+					</div>
+					<div class="box-bd clearfix">
+						<div class="box-bd-l brick-item">
+							<a href="#">
+								<img src="/images/chang2.jpg" />
+							</a>
+						</div>
+						<div class="box-bd-r">
+							<ul class="brick-list">
+								<!-- <li class="brick-item brick-item-m">
+									<div class="figure">
+										<a href="#">
+											<img src="images/mi1.png" />
+										</a>
+									</div>
+									<h3 class="title">
+										<a href="#">
+											小米9 6GB+128GB
+										</a>
+									</h3>
+									<p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+									<p class="price">1999元</p>
+									<div class="flag flag-now">
+										新品
+									</div>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="J_itemBox">
+					<a href="javascript:;">
+						<img src="/images/chang3.jpg" width="1226" />
+					</a>
+				</div>
+				<div id="homeelec" class="home-brick-box">
+					<div class="box-hd clearfix">
+						<h2 class="title">家电</h2>
+						<div class="more">
+							<ul class="J_brickTabSwitch">
+								<li class="tab-active">热门</li>
+								<li>电视影音</li>
+								<li>电脑</li>
+								<li>家居</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box-bd clearfix">
+						<div class="box-bd-l span10">
+							<li class=" brick-item brick-item-m">
+								<a href="#">
+									<img src="/images/chang5.jpg" />
+								</a>
+							</li>
+							<li class="brick-item brick-item-m">
+								<a href="#">
+									<img src="/images/chang6.jpg" />
+								</a>
+							</li>
+						</div>
+						<div class="box-bd-r">
+							<ul class="brick-list">
+								<!-- 	<li class="brick-item brick-item-m">
+									<div class="figure">
+										<a href="#">
+											<img src="images/mi1.png" />
+										</a>
+									</div>
+									<h3 class="title">
+										<a href="#">
+											小米9 6GB+128GB
+										</a>
+									</h3>
+									<p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+									<p class="price">1999元</p>
+									<div class="flag flag-now">
+										新品
+									</div>
+									<div class="review-wrapper">
+										<a href="#">
+											<span class="review">质量非常好，与卖家描述的完全一致，非常满意,真的完全...</span>
+											<span class="author"> 来自于 ╭ァ髙鮱三ヤ 的评价 </span>
+										</a>
+									</div>
+								</li>
+								<li class="brick-item brick-item-s">
+									<div class="figure-img">
+										<a href="#">
+											<img src="/images/mi10.png" />
+										</a>
+									</div>
+									<h3 class="title1">
+										<a href="#">小米净水器（厨下式）</a>
+									</h3>
+									<p class="num">177元</p>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="J_itemBox">
+					<a href="javascript:;">
+						<img src="/images/chang7.jpg" width="1226" />
+					</a>
+				</div>
+				<div id="recommend" class="home-brick-box">
+					<div class="box-hd clearfix">
+						<h2 class="title">为你推荐</h2>
+						<div class="more">
+							<a href="javasrcipt:;" class="iconfont control control-prev control-disabled">&#xe606;</a>
+							<a href="javasrcipt:;" class="iconfont control control-next">&#xe602;</a>
+						</div>
+					</div>
+					<div class="box-bd clearfix">
+						<div class="xm-carousel-wrapper box-bd-r">
+							<ul class="brick-list brick-list1 clearfix">
+								<li class="brick-item brick-item-m">
+									<div class="figure">
+										<a href="#">
+											<img src="images/mi1.png" />
+										</a>
+									</div>
+									<h3 class="title">
+										<a href="#">
+											小米9 6GB+128GB
+										</a>
+									</h3>
+									<p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+									<p class="price">1999元</p>
+									<p class="comment">558人评价</p>
+									<div class="flag flag-now">
+										新品
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="comment" class="home-brick-boxs">
+					<div class="box-hd clearfix">
+						<h2 class="title">热评产品</h2>
+					</div>
+					<div class="box-bd">
+						<ul class="review-list clearfix">
+							<li class="review-item ml">
+								<div class="figure">
+									<a href="javascript:;">
+										<img src="/images/zheng1.jpg" width="296" height="220" />
+									</a>
+								</div>
+								<p class="review">
+									<a href="javascript:;">
+										外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。附图，给客服妹子一个大...
+									</a>
+								</p>
+								<p class="author">
+									来自于 178576259 的评价
+								</p>
+								<div class="info">
+									<p class="title">
+										<a href="javascript:;">
+											米家车载空气净化器（USB车充版） 灰色
+										</a>
+									</p>
+									<span class="sep">|</span>
+									<p class="price">449元</p>
+								</div>
+							</li>
+							<li class="review-item">
+								<div class="figure">
+									<a href="javascript:;">
+										<img src="/images/zheng2.jpg" width="296" height="220" />
+									</a>
+								</div>
+								<p class="review">
+									<a href="javascript:;">
+										东西真心不错，用过最好用的插线板，做工外观没得挑剔，3个USB接口很实用，充电快，建议不包邮的应该在...
+									</a>
+								</p>
+								<p class="author">
+									来自于 yinyin19891117 的评价
+								</p>
+								<div class="info">
+									<p class="title">
+										<a href="javascript:;">
+											小米插线板
+										</a>
+									</p>
+									<span class="sep">|</span>
+									<p class="price">49元</p>
+								</div>
+							</li>
+							<li class="review-item">
+								<div class="figure">
+									<a href="javascript:;">
+										<img src="/images/zheng3.jpg" width="296" height="220" />
+									</a>
+								</div>
+								<p class="review">
+									<a href="javascript:;">
+										非常好用，孩子使用防止沉迷于电话影响学习。做工很好，定位基本准确，通话清晰。如果加入时间显示就更完美...
+									</a>
+								</p>
+								<p class="author">
+									来自于 178576259 的评价
+								</p>
+								<div class="info">
+									<p class="title">
+										<a href="javascript:;">
+											来自于 178576259 的评价
+										</a>
+									</p>
+									<span class="sep">|</span>
+									<p class="price">169元</p>
+								</div>
+							</li>
+							<li class="review-item">
+								<div class="figure">
+									<a href="javascript:;">
+										<img src="/images/zheng4.jpg" width="296" height="220" />
+									</a>
+								</div>
+								<p class="review">
+									<a href="javascript:;">
+										包装很让人感动，式样也很可爱，做出的饭全家人都爱吃，超爱五星！手机控制还是不太熟练，最主要是没有连接...
+									</a>
+								</p>
+								<p class="author">
+									来自于 HZG 的评价
+								</p>
+								<div class="info">
+									<p class="title">
+										<a href="javascript:;">
+											米家压力IH电饭煲
+										</a>
+									</p>
+									<span class="sep">|</span>
+									<p class="price">899元</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="content" class="home-brick-boxs">
+					<div class="box-hd clearfix">
+						<h2 class="title">内容</h2>
+					</div>
+					<div class="box-bd">
+						<ul class="content-list clearfix">
+							<li class="content-item content-item-book ml">
+								<h3 class="title">图书</h3>
+								<div class="xm-carousel-wrapper">
+									<ul class="item-list clearfix">
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													哈利·波特与被诅咒的孩子
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													177元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe1.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													好吗好的
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													畅销作家大冰2016年新书！讲给你听，好吗好的！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													17.99元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe2.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<p class="desc">
+												<a href="javascript:;">
+													海量好书，享受精品阅读时光<br />
+													漂亮的中文排版，千万读者选择！
+												</a>
+											</p>
+											<a class="btn-small btn-line-orange">前往多看阅读</a>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe3.jpg" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+									</ul>
+
+								</div>
+								<div class="xm-pagers-wrapper">
+									<ul class="xm-pagers">
+									</ul>
+								</div>
+								<div class="xm-controls">
+									<a href="javascript:;" class="control control-prev iconfont">&#xe606;</a>
+									<a href="javascript:;" class="control control-next iconfont">&#xe602;</a>
+								</div>
+							</li>
+							<li class="content-item content-item-theme">
+								<h3 class="title">MIUI 主题</h3>
+								<div class="xm-carousel-wrapper">
+									<ul class="item-list clearfix">
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													BROWN & FRIENDS定制主题
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													BROWN & FRIENDS 小米定制主题，是LINE FRIENDS在与小米公司品牌合作基础上，为小米米粉节特殊定制。
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe3.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													哈利·波特与被诅咒的孩子
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													177元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe1.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													好吗好的
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													畅销作家大冰2016年新书！讲给你听，好吗好的！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													17.99元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe2.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<p class="desc">
+												<a href="javascript:;">
+													海量好书，享受精品阅读时光<br />
+													漂亮的中文排版，千万读者选择！
+												</a>
+											</p>
+											<a class="btn-small btn-line-orange">前往多看阅读</a>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe3.jpg" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="xm-pagers-wrapper">
+									<ul class="xm-pagers">
+									</ul>
+								</div>
+								<div class="xm-controls">
+									<a href="javascript:;" class="control control-prev iconfont">&#xe606;</a>
+									<a href="javascript:;" class="control control-next iconfont">&#xe602;</a>
+								</div>
+							</li>
+							<li class="content-item content-item-game">
+								<h3 class="title">游戏</h3>
+								<div class="xm-carousel-wrapper">
+									<ul class="item-list clearfix">
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													非人学园
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													脑洞大开的二次元竞技手游
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe5.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													哈利·波特与被诅咒的孩子
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													177元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe1.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													好吗好的
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													畅销作家大冰2016年新书！讲给你听，好吗好的！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													17.99元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe2.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<p class="desc">
+												<a href="javascript:;">
+													海量好书，享受精品阅读时光<br />
+													漂亮的中文排版，千万读者选择！
+												</a>
+											</p>
+											<a class="btn-small btn-line-orange">前往多看阅读</a>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe3.jpg" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="xm-pagers-wrapper">
+									<ul class="xm-pagers">
+									</ul>
+								</div>
+								<div class="xm-controls">
+									<a href="javascript:;" class="control control-prev iconfont">&#xe606;</a>
+									<a href="javascript:;" class="control control-next iconfont">&#xe602;</a>
+								</div>
+							</li>
+							<li class="content-item content-item-app">
+								<h3 class="title">应用</h3>
+								<div class="xm-carousel-wrapper">
+									<ul class="item-list clearfix">
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													2018金米奖
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													最优秀的应用和游戏
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe6.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													哈利·波特与被诅咒的孩子
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													177元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe1.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<h4 class="name">
+												<a href="javascript:;">
+													好吗好的
+												</a>
+											</h4>
+											<p class="desc">
+												<a href="javascript:;">
+													畅销作家大冰2016年新书！讲给你听，好吗好的！
+												</a>
+											</p>
+											<p class="price">
+												<a href="javascript:;">
+													17.99元
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe2.png" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+										<li>
+											<p class="desc">
+												<a href="javascript:;">
+													海量好书，享受精品阅读时光<br />
+													漂亮的中文排版，千万读者选择！
+												</a>
+											</p>
+											<a class="btn-small btn-line-orange">前往多看阅读</a>
+											<p class="price">
+												<a href="javascript:;">
+												</a>
+											</p>
+											<div class="figure-img">
+												<a href="javascript:;">
+													<img src="/images/zhe3.jpg" width="216" height="154" />
+												</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="xm-pagers-wrapper">
+									<ul class="xm-pagers">
+									</ul>
+								</div>
+								<div class="xm-controls">
+									<a href="javascript:;" class="control control-prev iconfont">&#xe606;</a>
+									<a href="javascript:;" class="control control-next iconfont">&#xe602;</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="video" class="home-brick-boxs">
+					<div class="box-hd clearfix">
+						<h2 class="title">视频</h2>
+					</div>
+					<div class="box-bd">
+						<ul class="video-list clearfix">
+							<li class="video-item ml">
+								<div class="figure-img">
+									<a href="javascript:;">
+										<img src="/images/video1.jpg" width="296" height="180" />
+									</a>
+									<span class="play">
+										<i class="iconfont">&#xe638;</i>
+									</span>
+								</div>
+								<h3 class="title">
+									<a href="javascript:;">
+										王源 & 小米9 全新广告大片
+									</a>
+								</h3>
+								<p class="desc">好看又能打！我反正被帅到了，Will You？</p>
+							</li>
+							<li class="video-item">
+								<div class="figure-img">
+									<a href="javascript:;">
+										<img src="/images/video2.jpg" width="296" height="180" />
+									</a>
+									<span class="play">
+										<i class="iconfont">&#xe638;</i>
+									</span>
+								</div>
+								<h3 class="title">
+									<a href="javascript:;">
+										雷军对话王源
+									</a>
+								</h3>
+								<p class="desc">聊了3小时，这9个秘密决定公开</p>
+							</li>
+							<li class="video-item">
+								<div class="figure-img">
+									<a href="javascript:;">
+										<img src="/images/video3.jpg" width="296" height="180" />
+									</a>
+									<span class="play">
+										<i class="iconfont">&#xe638;</i>
+									</span>
+								</div>
+								<h3 class="title">
+									<a href="javascript:;">
+										小米MIX 3 磁动力滑盖全面屏
+									</a>
+								</h3>
+								<p class="desc">全新滑盖交互体验，不一样的新感觉</p>
+							</li>
+							<li class="video-item">
+								<div class="figure-img">
+									<a href="javascript:;">
+										<img src="/images/video4.jpg" width="296" height="180" />
+									</a>
+									<span class="play">
+										<i class="iconfont">&#xe638;</i>
+									</span>
+								</div>
+								<h3 class="title">
+									<a href="javascript:;">
+										小米MIX 3 故宫特别版
+									</a>
+								</h3>
+								<p class="desc">传承中华国宝艺术之美</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="home-right-bar">
+			<div class="bar-l">
+				<ul class="J_rightbar_l">
+					<li class="bar-sort bar-sort-q">
+						<a href="javascript:;">
+							<i class="iconfont">&#xe63b;</i>
+							<p class="bar-text">手机APP</p>
+						</a>
+					</li>
+					<li class="bar-sort bar-sort-q">
+						<a href="javascript:;">
+							<i class="iconfont">&#xe609;</i>
+							<p class="bar-text">个人中心</p>
+						</a>
+					</li>
+					<li class="bar-sort bar-sort-q">
+						<a href="javascript:;">
+							<i class="iconfont">&#xe610;</i>
+							<p class="bar-text">售后服务</p>
+						</a>
+					</li>
+					<li class="bar-sort bar-sort-q">
+						<a href="javascript:;">
+							<i class="iconfont">&#xe622;</i>
+							<p class="bar-text">联系客服</p>
+						</a>
+					</li>
+					<li class="bar-sort bar-sort-q bar-link">
+						<a href="html/cart.html">
+							<i class="iconfont">&#xe60a;</i>
+							<p class="bar-text">购物车</p>
+						</a>
+						<span class="bar-car J_barLMum"></span>
+					</li>
+				</ul>
+			</div>
+			<a href="javascript:;" class="bar-totop" id="bar-totop">
+				<i class="iconfont">&#xe614;</i>
+				<p>返回顶部</p>
+			</a>
+		</div>
+		<div class="site-footer"></div>
+		<script>
+			$.ajax({
+				type: 'get',
+				url: '/html/footer.html',
+				success: function(str) {
+					$('.site-footer').html(str);
+				}
+			});
+		</script>
+	</body>
+	<script src="/lib/swiper.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="lib/jquery.cookie.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: true, //可选选项，自动滑动
+			effect: 'fade',
+			loop: true,
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
+	</script>
+</html>

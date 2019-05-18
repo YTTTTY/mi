@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米账号-注册</title>
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/css/register.css" />
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="layout">
+				<div class="external_logo_area">
+					<a class="javasctipt:;"></a>
+				</div>
+				<div class="title-item">
+					<h2>注册小米帐号</h2>
+				</div>
+				<div>
+					<div class="registerone">
+						<div class="regbox">
+							<div class="phone_step1">
+								<h4 class="tit_normal">国家/地区</h4>
+							</div>
+							<div class="listwrap">
+								<p class="result-select-regions">中国</p>
+								<i class="icon_cirarr"></i>
+							</div>
+							<div class="region_tip_text">成功注册帐号后，国家/地区将不能被修改</div>
+							<h4 class="tit_normal">手机号码</h4>
+							<div class="select-cycode clearfix">
+								<div class="display_box ">
+									<p class="tits" style="float: left;">+86</p>
+									<i class="icon_arrow"></i>
+								</div>
+								<div class="inputbg">
+									<input type="text" placeholder="请输入手机号码" id="phone" />
+								</div>
+							</div>
+							<div class="err_tip" id="phone-hint">
+								<i class="icon_error"></i>
+								<span></span>
+							</div>
+							<div class="err_tip" id="clause">
+								<i class="icon_error"></i>
+								<span>请您同意用户条款</span>
+							</div>
+							<input type="button" class="btn332 btn_reg_1" value="立即注册" />
+						</div>
+						<div class="privacy_box">
+							<label class="n_checked select-privacy">
+								<i class="icon_select"></i>
+								注册帐号即表示您同意并愿意遵守小米
+								<a href="javascript:;">用户协议</a>和
+								<a href="javascript:;">隐私政策</a>
+							</label>
+						</div>
+					</div>
+					<div class="registertwo" style="display: none;">
+						<div class="step2_txt">
+							<p class="">我们已经发送一条验证短信至
+							<span class="address-place">+86 13112688275</span>
+							</p>
+							<p>请输入短信中的验证码</p>
+						</div>
+						<div class="inputbg">
+							<input type="text" class="resendcode" id="resendcode" placeholder="请输入验证码"/>
+							<span class="remain">
+								<a href="javascript:void(0)" id="sendout">重新发送</a>
+							</span>
+						</div>
+						<div class="err_tip" id="phone-hint2">
+							<i class="icon_error"></i>
+							<span></span>
+						</div>
+						<div class="fixed_bot mar_phone_dis2">
+							<input type="button" class="btn_reg_2" value="下一步"/>
+							<input type="button" class="btn_reg_3" value="返回"/>
+						</div>
+					</div>
+					<div class="registerthree" style="display: none;">
+						<div class="step3 phone_step3">
+							<dl>
+								<dt>
+									<h4>您注册的手机号为<span class="set-phone"></span></h4>
+									<h4>请设置您的密码：</h4>
+								</dt>
+								<dd>
+									<div class="inputbg">
+										<input type="password" class="password" id="password" placeholder="请输入密码"/>
+									</div>
+								</dd>
+								<dd>
+									<div class="inputbg">
+										<input type="password" class="password" id="set-password" placeholder="请输入确认密码"/>
+									</div>
+								</dd>
+								<div class="err_tip" id="phone-hint3">
+									<i class="icon_error"></i>
+									<span></span>
+								</div>
+								<div class="dis_box" id="dis_box">
+									<span>密码长度8~16位，数字、字母、字符至少包含两种</span>
+								</div>
+								<div class="error-password">
+									<input type="button" class="submit-step" value="提交"/>
+								</div>
+							</dl>
+						</div>
+					</div>
+					<div class="registerfour" style="display: none;">
+						<div class="step3">
+							<p class="content">您的小米ID是：
+								<span class="get-id"></span>
+							</p>
+						</div>
+						<div class="re-login">
+							<input type="button" class="register-login" id="register-login" value="登陆" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login-foot">
+			<div class="nf-link-area clearfix">
+				<ul class="lang-select-list">
+					<li>
+						<a href="javascript:;">简体</a>|
+					</li>
+					<li>
+						<a href="javascript:;">繁体</a>|
+					</li>
+					<li>
+						<a href="javascript:;">English</a>|
+					</li>
+					<li>
+						<a href="javascript:;">常見問題</a>|
+					</li>
+					<li>
+						<a href="javascript:;">隱私政策</a>
+					</li>
+				</ul>
+			</div>
+			<p class="nf-intro" style="margin-top: 10px;">
+				小米公司版權所有-京ICP備10046444-
+				<a href="javascript:;" style="color: #757575;">
+					<img src="/images/ghs.png" />
+					京公網安備11010802020134號
+				</a>
+				-京ICP證110507號
+			</p>
+		</div>
+		<script src="/lib/jquery-1.12.4.js"></script>
+		<script src="/lib/jquery.cookie.js"></script>
+		<script src="/js/register.js"></script>
+	</body>
+</html>

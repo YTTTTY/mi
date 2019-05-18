@@ -1,0 +1,364 @@
+$ind_color: #ff6700;
+.wrap{
+	width: 100%;
+}
+input{
+	width: 330px;
+	height: 40px;
+    line-height: 20px;
+    display: inline-block;
+	border: 1px solid #e8e8e8;
+	padding: 10px;
+}
+.btn332{
+	width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+.layout{
+	width: 854px;
+    margin: 10px auto 0;
+	background: #fff;
+    padding: 0 34px 30px;
+	.external_logo_area{
+		padding-bottom: 40px;
+		display: block;
+		a{
+			width: 49px;
+		height: 48px;
+		margin: 0 auto;
+		display: block;
+		cursor: default;
+		background-image: url('/images/milogo.png');
+		}
+	}
+	.title-item{
+		text-align: center;
+		h2{
+			font-size: 30px;
+			font-weight: normal;
+			color: #333;
+			line-height: 1.5;
+		}
+	}
+}
+.registerone{
+	.regbox{
+		width: 332px;
+		padding: 30px 0;
+		line-height: 20px;
+		margin: 0 auto;
+		.phone_step1{
+			padding-bottom: 5px;
+			color: #333;
+			font-weight: normal;
+			font-size: 14px;
+		}
+	}
+	.listwrap{
+		height: 40px;
+		padding-left: 14px;
+		line-height: 40px;
+		vertical-align: middle;
+		border: 1px solid #e8e8e8;
+		color: #555;
+		cursor: pointer;
+		margin-bottom: 10px;
+		.result-select-regions{
+			float: left;
+			width: 275px;
+			border-right: 1px solid #e8e8e8;
+			cursor: pointer;
+		}
+		.icon_cirarr{
+			float: right;
+			background: url('/images/icon_user.png');
+			width: 16px;
+			height: 16px;
+			margin: 11px 12px 0 12px;
+		}
+	}
+	.region_tip_text{
+		margin-bottom: 15px;
+	}
+	.tit_normal{
+		padding-bottom: 5px;
+		color: #333;
+		font-weight: normal;
+	}
+	.select-cycode{
+		margin-bottom: 10px;
+		.display_box{
+			float: left;
+			padding-bottom: 15px;
+			position: relative;
+			width: 74px;
+			padding: 0 9px;
+			height: 40px;
+			line-height: 40px;
+			display: inline-block;
+			vertical-align: middle;
+			border: 1px solid #e8e8e8;
+			color: #555;
+			cursor: pointer;
+		}
+		.icon_arrow{
+			float: left;
+			margin: 17px 0 0 10px;
+			width: 0;
+			height: 0;
+			line-height: 0;
+			font-size: 0;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #9d9d9d transparent transparent transparent;
+		}
+		.inputbg{
+			padding-bottom: 15px;
+			float: left;
+			height: 40px;
+			input{
+				margin-left: -1px;
+				position: relative;
+				z-index: 3;
+				line-height: 40px;
+				display: inline-block;
+				border: 1px solid #e8e8e8;
+				width: 259px;
+				line-height: 20px;
+				display: inline-block;
+			}
+			.input-active{
+				border: 1px solid $ind_color;
+			}
+		}
+	}
+	.err_tip{
+		display: none;
+		color: $ind_color;
+		vertical-align: middle;
+		padding-top: 10px;
+	}
+	.btn_reg_1{
+		background-color: #ff6700;
+		margin-top: 30px;
+		border: 1px solid rgba(186,186,186,0.3);
+		color: #fff;
+		padding: 0px;
+		&:hover{
+			background: #ff936a;
+		}
+	}
+}
+.privacy_box{
+	text-align: center;
+	padding-top: 40px;
+	color: #9d9d9d;
+	a{
+		color: #333;
+		font-weight: 700;
+	}
+}
+.n_checked {
+		padding: 10px 0;
+		cursor: pointer;
+		display: inline-block;
+	}
+.icon_select{
+	width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+	background-image: url('/images/two.png');
+}
+.icon_select-active{
+	background-image: url('/images/three.png');
+}
+.icon_error{
+	width: 14px;
+    height: 14px;
+    margin: -1px 5px 0 0;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+	background-image: url('/images/one.png');
+}
+.registertwo{
+	display: none;
+	width: 332px;
+    padding: 30px 0;
+    line-height: 20px;
+	margin: 0 auto;
+	.step2_txt{
+		padding-bottom: 10px;
+		p{
+			padding-bottom: 10px;
+			.address-place{
+				color: $ind_color;
+			}
+		}
+	}
+	.inputbg{
+		width: 580px;
+	    height: auto;
+		padding-bottom: 15px;
+		
+	}
+	.fixed_bot{
+		.btn_reg_2{
+			background-color: #ff6700;
+			margin-top: 15px;
+			border: 1px solid rgba(186,186,186,0.3);
+			color: #fff;
+			cursor: pointer;
+			&:hover{
+				background: #ff936a;
+			}
+		}
+		.btn_reg_3{
+			background: #fff;
+			margin-top: 10px;
+			border: 1px solid #ddd;
+			color: #7c7c7c;
+			cursor: pointer;
+			&:hover{
+				color: #333;
+			}
+		}
+	}
+	.err_tip{
+		display: none;
+	}
+}
+.err_tip{
+	color: $ind_color;
+}
+.inputbg{
+	.resendcode{
+		width: 210px;
+		padding: 10px;
+		display: inline-block;
+	}
+	.remain{
+		margin-left: 8px;
+		vertical-align: middle;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		border: 1px solid #e8e8e8;
+		a{
+			color: #000;
+			cursor: pointer;
+			padding: 0 10px;
+			display: block;
+			&:hover{
+				background: #ececec !important;
+				color: #888;
+			}
+		}
+	}
+	.remain-active{
+		a{
+			background: none !important;
+			color: #9d9d9d !important;
+			cursor: not-allowed !important;
+			&:hover{
+				background: none !important;
+			}
+		}
+	}
+}
+.registerthree{
+	width: 332px;
+    padding: 30px 0;
+    line-height: 20px;
+	margin: 0 auto;
+	dt{
+		margin: 15px 0;
+		h4{
+			font-size: 14px;
+			font-weight: 700;
+			color: #666;
+			span{
+				color: $ind_color;
+			}
+		}
+	}
+	.inputbg{
+		padding-bottom: 15px;
+	}
+	.dis_box{
+		color: #555;
+		line-height: 20px;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+	.err_tip{
+		display:none;
+		white-space: nowrap;
+	}
+	.submit-step{
+		background-color: #ff6700;
+		margin-top: 15px;
+		border: 1px solid rgba(186,186,186,0.3);
+		color: #fff;
+		cursor: pointer;
+		&:hover{
+			background: #ff936a;
+		}
+	}
+}
+.registerfour{
+	width: 332px;
+	padding: 30px 0;
+	line-height: 20px;
+	margin: 0 auto;
+	text-align: center;
+	.step3{
+		padding: 50px 0;
+	}
+	.content{
+		font-size: 16px;
+		color: #787878;
+		.get-id{
+			color: $ind_color;
+		}
+	}
+	.register-login{
+		background-color: #ff6700;
+		margin-top: 15px;
+		border: 1px solid rgba(186,186,186,0.3);
+		color: #fff;
+		cursor: pointer;
+		&:hover{
+			background: #ff936a;
+		}
+	}
+}
+.login-foot{
+	margin: 20px 0;
+	text-align: center;
+	color: #757575;
+	.lang-select-list{
+		li{
+			display: inline-block;
+			a{
+				color: #757575;
+				padding: 0 10px;
+				display: inline-block;
+				&:hover{
+					color: #333;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/details.css" />
+		<script src="/lib/jquery-1.12.4.js"></script>
+		<script src="../lib/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div class="xm_header"></div>
+		<script>
+			var header = new Promise(function(res) {
+				$.ajax({
+					type: 'get',
+					url: '/html/head.html',
+					success: function(str) {
+						$('.xm_header').html(str);
+						res()
+					}
+				});
+			});
+			header.then(function() {
+				$.ajax({
+					type: 'get',
+					url: '/js/header.js'
+				});
+			});
+		</script>
+		<div class="J_proHeader">
+			<div class="xm-product-box">
+				<div class="container">
+					<h2 class="J_proName">小米9 王源限量版</h2>
+					<div class="right">
+						<a href="javascript:;">概述</a>
+						<span class="separator">|</span>
+						<a href="javascript:;">参数</a>
+						<span class="separator">|</span>
+						<a href="javascript:;">F码通道</a>
+						<span class="separator">|</span>
+						<a href="javascript:;">用户评价</a>
+					</div>
+				</div>
+			</div>
+			<div class="xm-product-box nav-bar-hidden" id="J_fixNarBar">
+				<div class="container">
+					<h2 class="J_proName">小米9 王源限量版</h2>
+					<div class="right">
+						<a href="javascript:;">概述</a>
+						<span class="separator">|</span>
+						<a href="javascript:;">参数</a>
+						<span class="separator">|</span>
+						<a href="javascript:;">F码通道</a>
+						<span class="separator">|</span>
+						<a href="javascript:;">用户评价</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="container pro-choose-main clearfix">
+				<!-- 左侧轮播图 -->
+				<div class="pro-view span10">
+					<div class="swiper-container">
+						<!-- <div class="swiper-wrapper"> -->
+							<!-- <div class="swiper-slide">
+								<img src="/images/mic2.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/images/fen1.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/images/fen2.jpg" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/images/fen3.jpg" />
+							</div> -->
+						<!-- 	<div class="swiper-shade"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+					</div>
+					<div class="swiper-container-big">
+						<div class="swiper-big">
+							<img src="" />
+						</div>
+					</div>
+				</div>
+				<div class="pro-info span10">
+					<h1 class="pro-title titles"></h1>
+					<p class="sale-desc">
+						
+					</p>
+					<div class="J_main">
+						<p class="aftersale-company">小米自营</p>
+						<div class="pro-price J_proPrice">
+							<span class="price"></span>
+						</div>
+						<div class="J_saleWrap">
+							<div class="J_flowWrap ">
+								<span class="flow-tag">赠品</span>
+								<span class="flow-name">赠米粉卡</span>
+							</div>
+						</div>
+						<div class="pro-list">
+							<li>
+								<em class="titles"></em>
+								<span class="price"></span>
+							</li>
+							<li class="totlePrice"></li>
+						</div>
+						<ul class="btn-wrap clearfix">
+							<li>
+								<a href="javascript:;" class="btn btn-primary  btn-biglarge J_proBuyBtn" id="details">加入购物车</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="btn-gray btn-like btn-biglarge">
+									<i class="iconfont">&#xe656;</i>
+									喜欢
+								</a>
+							</li>
+						</ul>
+						<div class="pro-policy">
+							<ul class="clearfix">
+								<li>
+									<span>
+										<i class="iconfont">&#xe6b8;</i>
+										<em>小米自营</em>
+									</span>
+								</li>
+								<li>
+									<span>
+										<i class="iconfont">&#xe6b8;</i>
+										<em>小米发货</em>
+									</span>
+								</li>
+								<li>
+									<span>
+										<i class="iconfont">&#xe6b8;</i>
+										<em>7天无理由退货</em>
+									</span>
+								</li>
+								<li>
+									<span>
+										<i class="iconfont">&#xe6b8;</i>
+										<em>运费说明</em>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="container">
+				<h3>价格说明</h3>
+				<img src="/images/tishi.jpeg" />
+			</div>
+		</div>
+		<div class="site-footer"></div>
+		<script src="/js/details.js"></script>
+		<script src="../js/swiper.min.js"></script>
+		<script>
+			$.ajax({
+				type: 'get',
+				url: '/html/footer.html',
+				success: function(str) {
+					$('.site-footer').html(str);
+				}
+			});
+		</script>
+	</body>
+</html>

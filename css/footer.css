@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.container {
+  /*内容、版心 提取 */
+  width: 1226px;
+  margin: 0 auto; }
+
+.footer-service {
+  padding: 28px 0;
+  border-bottom: 1px solid #e0e0e0; }
+  .footer-service li {
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    border-left: 1px solid #e0e0e0;
+    height: 25px;
+    float: left; }
+    .footer-service li a {
+      color: #333;
+      transition: all .3s; }
+      .footer-service li a:hover {
+        color: #ff6700; }
+      .footer-service li a i {
+        margin-right: 6px;
+        font-size: 24px;
+        line-height: 24px;
+        vertical-align: -4px; }
+
+.footer-links {
+  padding: 40px 0; }
+  .footer-links .col-links {
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0; }
+    .footer-links .col-links dt {
+      margin: -1px 0 26px;
+      font-size: 14px;
+      line-height: 1.25;
+      color: #424242; }
+    .footer-links .col-links dd {
+      margin-top: 10px;
+      font-size: 12px; }
+      .footer-links .col-links dd a {
+        color: #757575; }
+        .footer-links .col-links dd a:hover {
+          color: #ff6700; }
+  .footer-links .col-contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161; }
+    .footer-links .col-contact .phone {
+      margin: 0 0 5px;
+      font-size: 22px;
+      line-height: 1;
+      color: #ff6700; }
+    .footer-links .col-contact p {
+      font-size: 12px;
+      margin: 0 0 16px; }
+    .footer-links .col-contact a {
+      display: inline-block;
+      width: 118px;
+      height: 28px;
+      font-size: 12px;
+      line-height: 28px;
+      background: #fff;
+      color: #ff6700;
+      border: 1px solid #333;
+      border-color: #ff6700;
+      transition: all .5s; }
+      .footer-links .col-contact a:hover {
+        background: #ff6700;
+        color: #fff; }
+        .footer-links .col-contact a:hover i {
+          color: #fff; }
+      .footer-links .col-contact a i {
+        color: #ff6700;
+        font-size: 10px;
+        margin-right: 3px;
+        transition: all .5s; }
+
+.site-info {
+  padding: 30px 0;
+  font-size: 12px;
+  background: #fafafa; }
+  .site-info .container {
+    position: relative; }
+  .site-info .logo {
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(/images/logo-footer.png) no-repeat 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -999px; }
+  .site-info .info-text {
+    color: #b0b0b0;
+    padding-left: 67px; }
+    .site-info .info-text .sites a {
+      color: #757575; }
+      .site-info .info-text .sites a:hover {
+        color: #ff6700; }
+    .site-info .info-text .sites .sep {
+      margin: 0 .25em;
+      font-family: sans-serif; }
+    .site-info .info-text p {
+      margin-bottom: 14px; }
+      .site-info .info-text p a {
+        color: #b0b0b0; }
+        .site-info .info-text p a:hover {
+          color: #ff6700; }
+  .site-info .info-links {
+    height: 28px;
+    margin: 4px 0 0;
+    padding-left: 67px; }
+    .site-info .info-links img {
+      width: auto;
+      height: 28px;
+      margin-left: 0px;
+      margin-bottom: 15px; }
+  .site-info .slogan {
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(/images/slogan2016.png) no-repeat center 0;
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden; }
+
+/*# sourceMappingURL=footer.css.map */
